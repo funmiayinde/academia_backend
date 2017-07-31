@@ -1,0 +1,52 @@
+<div id="wrapper">
+    <div id="layout-static">
+        <div class="static-content-wrapper">
+            <div class="static-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-13">
+                                <div class="input-group mb-xl">
+                                    <input type="text" class="form-control input-lg" placeholder="Search books...">
+                                    <span class="input-group-btn">
+					<button class="btn btn-default btn-lg" type="button"><i class="ti ti-search"></i></button>
+				</span>
+                                </div><!-- /input-group -->
+                                <div class="panel panel-inbox-read">
+                                    <div class="panel-body">
+
+                                        <div class="clearfix">
+                                            <h4 class="inbox-read-title pull-left">List of book uploaded for sells.</h4>
+                                        </div>
+                                        <hr>
+                                        <p class="mb20">Total books<a href="#">(10)</a></p>
+                                        <div class="msg-attachments row">
+                                        {{#each book_details}}
+                                            <div class="col-md-3">
+                                                <div class="well well-sm">
+                                                    {{#if cover}}
+                                                    <img src="/{{cover}}" class="img-responsive" style="width: 500px; height: 200px;">
+                                                     {{/if}}
+                                                    <strong>Title : {{title}}</strong>
+                                                    <span class="block">Price : &#8358;{{price}}</span>
+                                                    <ul class="list-inline">
+                                                        <li><a href="/books/edit_books/{{this._id}}">Edit</a></li>
+                                                        <li><a href="/books/delete/{{this._id}}">Delete</a></li>
+                                                        <li><a href="/books/view_books/{{this._id}}">View details</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        {{/each}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- .container-fluid -->
+                </div> <!-- #page-content -->
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,101 @@
+<style type="text/css" media="screen">
+    .easypiechart .percent-non {
+    color: #fff;
+    font-weight: normal;
+    font-size: 50px;
+    padding: 0 0 !important;
+}
+</style>
+
+<h1>Academics</h1>
+<p>Welcome {{firstName}} to Academics</p>
+<div class="row">
+    <div class="col-md-3">
+        <div class="info-tile tile-orange" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon"><i class="ti ti-shopping-cart-full"></i></div>
+            <div class="tile-heading"><span>Total Books Purchased</span></div>
+            <div class="tile-body"><span>0</span></div>
+            <div class="tile-footer"><span class="text-success">22.5% <i class="fa fa-level-up"></i></span></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="info-tile tile-success" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon"><i class="ti ti-book"></i></div>
+            <div class="tile-heading"><span>Total Books Uploaded</span></div>
+            <div class="tile-body"><span>{{book_count}}</span></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="info-tile tile-info" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon"><i class="ti ti-user"></i></div>
+            <div class="tile-heading"><span>Total Users</span></div>
+            <div class="tile-body"><span>{{count_users}}</span></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="info-tile tile-danger" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon"><i class="ti ti-user"></i></div>
+            <div class="tile-heading"><span>Total Admin</span></div>
+            <div class="tile-body"><span>{{admin_count}}</span></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-default" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="panel-heading">
+                <h2>Purchased Graph</h2>
+                <div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+            </div>
+            <div class="panel-body">
+                <div id="donut-example"><svg height="342" version="1.1" width="448" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#fafafa" d="M224,282.5A109,109,0,0,0,326.9220648142984,209.38939361930437" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#fafafa" stroke="#ffffff" d="M224,285.5A112,112,0,0,0,329.75478219450844,210.377175095065L373.66190158776413,225.6877879693554A158.5,158.5,0,0,1,224,332Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#757575" d="M326.9220648142984,209.38939361930437A109,109,0,0,0,126.22069250765188,125.33147265779414" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#757575" stroke="#ffffff" d="M329.75478219450844,210.377175095065A112,112,0,0,0,123.52951890694504,124.00573337314628L77.3310387614778,101.24720898669122A163.5,163.5,0,0,1,378.38309722144754,227.33409042895653Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#4caf50" d="M126.22069250765188,125.33147265779414A109,109,0,0,0,223.96575664063926,282.49999462106564" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#4caf50" stroke="#ffffff" d="M123.52951890694504,124.00573337314628A112,112,0,0,0,223.9648141628587,285.4999944730216L223.95020575725985,331.9999921783386A158.5,158.5,0,0,1,81.81632809598918,103.45677446110433Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="224" y="163.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: 800; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial;" font-size="15px" font-weight="800" transform="matrix(1.9614,0,0,1.9614,-215.3357,-165.3586)" stroke-width="0.5098432721712538"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">In-Store Sales</tspan></text><text x="224" y="183.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: Arial;" font-size="14px" transform="matrix(2.2708,0,0,2.2708,-284.6468,-223.0313)" stroke-width="0.4403669724770642"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text></svg></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="panel-heading">
+                <h2>Area Graph</h2>
+                <div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+            </div>
+            <div class="panel-body">
+                <div id="area-example" style="position: relative;"><svg height="342" version="1.1" width="448" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.515625" y="308" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,308H423" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="237.25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,237.25H423" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="166.5" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,166.5H423" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="95.75" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">150</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,95.75H423" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">200</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,25H423" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="423" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="360.03135697170245" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><text x="297.06271394340484" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="234.09407091510727" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan></text><text x="170.95291105659516" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2008</tspan></text><text x="107.98426802829758" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2007</tspan></text><text x="45.015625" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2006</tspan></text><path fill="#929292" stroke="#000000" d="M45.015625,39.14999999999998C60.757785757074394,56.837499999999984,92.24210727122318,92.2125,107.98426802829758,109.9C123.72642878537198,127.5875,155.21075029952075,180.64999999999998,170.95291105659516,180.64999999999998C186.73820102122318,180.64999999999998,218.30878095047925,109.9,234.09407091510727,109.9C249.83623167218167,109.9,281.32055318633047,180.64999999999998,297.06271394340484,180.64999999999998C312.8048747004792,180.64999999999998,344.2891962146281,127.5875,360.03135697170245,109.9C375.7735177287768,92.2125,407.2578392429256,56.837499999999984,423,39.14999999999998L423,308L45.015625,308Z" fill-opacity="1" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#757575" d="M45.015625,39.14999999999998C60.757785757074394,56.837499999999984,92.24210727122318,92.2125,107.98426802829758,109.9C123.72642878537198,127.5875,155.21075029952075,180.64999999999998,170.95291105659516,180.64999999999998C186.73820102122318,180.64999999999998,218.30878095047925,109.9,234.09407091510727,109.9C249.83623167218167,109.9,281.32055318633047,180.64999999999998,297.06271394340484,180.64999999999998C312.8048747004792,180.64999999999998,344.2891962146281,127.5875,360.03135697170245,109.9C375.7735177287768,92.2125,407.2578392429256,56.837499999999984,423,39.14999999999998" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.015625" cy="39.14999999999998" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="107.98426802829758" cy="109.9" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="170.95291105659516" cy="180.64999999999998" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="234.09407091510727" cy="109.9" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="297.06271394340484" cy="180.64999999999998" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="360.03135697170245" cy="109.9" r="4" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="423" cy="39.14999999999998" r="7" fill="#757575" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#48575f" stroke="#000000" d="M45.015625,166.5C60.757785757074394,175.34375,92.24210727122318,193.03125,107.98426802829758,201.875C123.72642878537198,210.71875,155.21075029952075,237.25,170.95291105659516,237.25C186.73820102122318,237.25,218.30878095047925,201.875,234.09407091510727,201.875C249.83623167218167,201.875,281.32055318633047,237.25,297.06271394340484,237.25C312.8048747004792,237.25,344.2891962146281,210.71875,360.03135697170245,201.875C375.7735177287768,193.03125,407.2578392429256,175.34375,423,166.5L423,308L45.015625,308Z" fill-opacity="1" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#37474f" d="M45.015625,166.5C60.757785757074394,175.34375,92.24210727122318,193.03125,107.98426802829758,201.875C123.72642878537198,210.71875,155.21075029952075,237.25,170.95291105659516,237.25C186.73820102122318,237.25,218.30878095047925,201.875,234.09407091510727,201.875C249.83623167218167,201.875,281.32055318633047,237.25,297.06271394340484,237.25C312.8048747004792,237.25,344.2891962146281,210.71875,360.03135697170245,201.875C375.7735177287768,193.03125,407.2578392429256,175.34375,423,166.5" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.015625" cy="166.5" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="107.98426802829758" cy="201.875" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="170.95291105659516" cy="237.25" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="234.09407091510727" cy="201.875" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="297.06271394340484" cy="237.25" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="360.03135697170245" cy="201.875" r="4" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="423" cy="166.5" r="7" fill="#37474f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 0px; top: 96px;"><div class="morris-hover-row-label">2012</div><div class="morris-hover-point" style="color: #37474f">
+                    Series A:
+                    100
+                </div><div class="morris-hover-point" style="color: #757575">
+                    Series B:
+                    90
+                </div></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="col-md-9">-->
+    <!--<div class="panel panel-brown" >-->
+    <!--<div class="panel-heading">-->
+        <!--<h2>Recent Books Purchased</h2>-->
+        <!--<div class="panel-ctrls button-icon-bg">-->
+            <!--<span class="button-icon has-bg"></span>-->
+            <!--<div class="dropdown"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="panel-body no-padding">-->
+        <!--<table class="table browsers m-n">-->
+            <!--<tbody>-->
+            <!--{{#each combinedResponse}}-->
+                <!--&lt;!&ndash;{{!#if combinedResponse}}&ndash;&gt;-->
+
+                    <!--<tr>-->
+                        <!--<td>{{@key}}</td>-->
+                        <!--<td class="text-right vam">{{this}}</td>-->
+
+                    <!--</tr>-->
+                <!--{{!/if}}-->
+            <!--{{/each}}-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+<!--</div>-->
+

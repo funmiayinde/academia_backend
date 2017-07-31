@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-bluegray"
+             style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="panel-heading">
+                <h2>Add new admin</h2>
+            </div>
+            <!--enctype="multipart/form-data"-->
+            <form method="post" action="/admin/create" class="form-horizontal">
+                <div class="panel-body">
+                    {{#if success}}
+                        <div class="text-center center-block">
+                            <br>
+                            <div class="alert alert-success col-xs-offset-3 col-xs-9"
+                                 style="padding: 10px;">{{success}}</div>
+                        </div>
+                    {{/if}}
+                    {{#if error}}
+                        <div class="center-block text-center">
+                            <br>
+                            <div class=" col-xs-offset-3 col-xs-9 alert alert-danger" style="margin-bottom: -10px; padding: 10px;">{{error}}</div>
+                        </div>
+                    {{/if}}
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">First name</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="John" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">Last name</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Rooney" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">Email</label>
+                        <div class="col-xs-9">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="rooney@gmail.com" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">Username</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Frank" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">Password</label>
+                        <div class="col-xs-9">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="******" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="title" class="col-xs-3 control-label">Address</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" name="address" id="address" placeholder="1,Pyramid Road, Opposite Pharoah Avenue" required >
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="sex" class="col-xs-3 control-label">Gender</label>
+                        <div class="col-xs-9">
+                            <select class="form-control" name="gender" id="gender" required novalidate >
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="sex" class="col-xs-3 control-label">Admin Role</label>
+                        <div class="col-xs-9">
+                            <select class="form-control" name="role" id="role" required novalidate >
+                                <option>Administrator</option>
+                                <option>Members</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mb-md">
+                        <label for="phoneNumber" class="col-xs-3 control-label">Phone Number</label>
+                        <div class="col-xs-9">
+                            <input type="number" class="form-control" name="phone_number" id="phone_number" placeholder="phone number" required >
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                    <div class="clearfix">
+                        <input type="submit" class="btn btn-primary pull-right" name="" value="Save">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

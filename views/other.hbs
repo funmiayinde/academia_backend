@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="utf-8">
+	<title>Monitrix Admin {{#if title}} - {{title}}{{/if}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="author" content="lumbex">
+
+	<link type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600' rel='stylesheet'>
+
+	<link type="text/css" href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">        <!-- Font Awesome -->
+	<link type="text/css" href="/fonts/themify-icons/themify-icons.css" rel="stylesheet">              <!-- Themify Icons -->
+	<link type="text/css" href="/css/styles.css" rel="stylesheet">                                     <!-- Core CSS with all styles -->
+
+	<link type="text/css" href="/plugins/codeprettifier/prettify.css" rel="stylesheet">                <!-- Code Prettifier -->
+	<link type="text/css" href="/plugins/iCheck/skins/minimal/blue.css" rel="stylesheet">              <!-- iCheck -->
+
+
+    <link type="text/css" href="/plugins/fullcalendar/fullcalendar.css" rel="stylesheet"> 						<!-- FullCalendar -->
+	<link type="text/css" href="/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 			<!-- jVectorMap -->
+	<link type="text/css" href="/plugins/switchery/switchery.css" rel="stylesheet">   							<!-- Switchery -->
+</head>
+
+<body class="focused-form animated-content">
+
+{{{body}}}
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script> 							<!-- Load jQuery -->
+<script type="text/javascript" src="/js/jqueryui-1.10.3.min.js"></script> 							<!-- Load jQueryUI -->
+<script type="text/javascript" src="/js/angular.js"></script> 							<!-- Load jQueryUI -->
+<script type="text/javascript" src="/js/app.js"></script> 							<!-- Load jQueryUI -->
+<!--<script type="text/javascript" src="/controllers/controller.js"></script> 							&lt;!&ndash; Load jQueryUI &ndash;&gt;-->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script> 								<!-- Load Bootstrap -->
+<script type="text/javascript" src="/js/enquire.min.js"></script> 									<!-- Load Enquire -->
+
+<script type="text/javascript" src="/plugins/velocityjs/velocity.min.js"></script>					<!-- Load Velocity for Animated Content -->
+<script type="text/javascript" src="/plugins/velocityjs/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/plugins/wijets/wijets.js"></script>     						<!-- Wijet -->
+
+<script type="text/javascript" src="/plugins/codeprettifier/prettify.js"></script> 				<!-- Code Prettifier  -->
+<script type="text/javascript" src="/plugins/bootstrap-switch/bootstrap-switch.js"></script> 		<!-- Swith/Toggle Button -->
+
+<script type="text/javascript" src="/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js"></script>  <!-- Bootstrap Tabdrop -->
+
+<script type="text/javascript" src="/plugins/iCheck/icheck.min.js"></script>     					<!-- iCheck -->
+
+<script type="text/javascript" src="/plugins/nanoScroller/js/jquery.nanoscroller.min.js"></script> <!-- nano scroller -->
+
+<script type="text/javascript" src="/js/application.js"></script>
+<!--<script type="text/javascript" src="/js/gmaps2.js"></script>-->
+<script type="text/javascript" src="/demo/demo.js"></script>
+<script type="text/javascript" src="/demo/demo-switcher.js"></script>
+<script type="text/javascript" src="/plugins/form-jasnyupload/fileinput.min.js"></script>               			<!-- File Input -->
+
+<!--<script type="text/javascript" src="/demo/demo-formcomponents.js"></script>-->
+
+
+
+<script type="text/javascript" src="/plugins/sparklines/jquery.sparklines.min.js"></script> 			 <!-- Sparkline -->
+
+<script type="text/javascript" src="/plugins/switchery/switchery.js"></script>     					<!-- Switchery -->
+<script type="text/javascript" src="/plugins/easypiechart/jquery.easypiechart.js"></script>
+<script type="text/javascript" src="/plugins/fullcalendar/moment.min.js"></script> 		 			<!-- Moment.js Dependency -->
+<script type="text/javascript" src="/plugins/fullcalendar/fullcalendar.min.js"></script>   			<!-- Calendar Plugin -->
+
+
+
+<script type="text/javascript" src="/plugins/datatables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/plugins/datatables/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="/demo/demo-datatables.js"></script>
+
+<!--<script type="text/javascript" src="/js/gmaps2.js"></script>-->
+
+<!--6.5233° N, 3.5408° E-->
+
+<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyIg-0NHHp5Uqug00XBX2dZgTo0ZD51DQ"></script-->
+<script>
+    //    var map;
+    function initialize() {
+        var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(6.5233, 3.5408)
+        };
+        var map = new  google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+    }
+    function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAyIg-0NHHp5Uqug00XBX2dZgTo0ZD51DQ&v=3.exp&'+'callback=initialize';
+        document.body.appendChild(script);
+    }
+    window.onload = loadScript;
+</script>
+
+<!-- End loading page level scripts-->
+
+</body>
+
+</html>
